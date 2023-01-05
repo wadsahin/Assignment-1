@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+    font-family: 'Anonymous Pro', monospace;
+}
+
+#header-section{
+    display: flex;
+}
+.header-left-div{
+    width:50%;   
+    height:290px;
+}
+
+.inner-left-div-1{
+    display: flex;
+    flex-direction: column;
+    
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top:30%;
+    
+
+}
+.inner-left-div-1 h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+.inner-left-div-1 span{
+    color:orangered;
+    font-size:55px;
+
+}
+.inner-left-div-1 p{
+    font-size:;
+    margin-bottom: 10px;
+
+}
+.colored-button{
+    padding: 15px 20px;
+    background-color: orange;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+.header-right-div{
+    margin-top: 10px;
+    width: 40%;
+  
+}
+.header-right-div img{
+ position: relative;
+}
+/* ------Header Section || Tablet View------ */
+@media (max-width:992px){
+    .inner-left-div-1{
+        top: 40px;
+
+    }
+    .inner-left-div-1 h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    
+    }
+    .inner-left-div-1 span{
+       font-size: 45px;      
+    }
+    .colored-button{
+       margin-top:5px;     
+    }
+
+
+}
+
+/* ------Header Section || Mobile View------ */
+
+@media (max-width:768px){
+
+    #header-section{
+        flex-direction: column;
+    }
+
+    .header-left-div{
+        width:100%;
+        height:auto;     
+    }
+    .inner-left-div-1{
+        position: relative;
+        width: 80%;
+        margin: auto;
+        top:10;
+        left:0px;
+    }
+   
+
+    .header-right-div{
+        width: 100%;
+        margin-top: 10px;
+        margin: auto;
+
+    }
+
+}
+/* ------Header Section || Mobile View || End------ */
+/* ------Header Section End------ */
